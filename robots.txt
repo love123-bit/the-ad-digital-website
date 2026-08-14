@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# After the website is published, keep this line pointing to the live sitemap.
+Sitemap: /sitemap.xml

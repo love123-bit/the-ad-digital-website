@@ -1,0 +1,12 @@
+THE AD DIGITAL — GOOGLE SEO / INDEXING
+
+1. Publish this website on a real public URL (GitHub Pages, Netlify, Vercel, or your own domain).
+2. Open sitemap.xml and replace https://YOUR-DOMAIN-HERE/ with the exact live website URL.
+3. Open robots.txt and make sure the sitemap path is correct for the live site.
+4. Add the live website to Google Search Console: https://search.google.com/search-console
+5. Verify ownership.
+6. Submit the full sitemap URL, for example: https://your-domain.com/sitemap.xml
+7. Use URL Inspection in Search Console and request indexing for the home page.
+8. Keep the site public and do not block Googlebot.
+
+Important: SEO can make the website eligible for Google indexing, but Google decides when and where it appears in search results. There is no instant ranking guarantee.

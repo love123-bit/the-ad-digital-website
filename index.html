@@ -80,6 +80,60 @@ footer{padding:30px 0;border-top:1px solid #1d2a3d;color:var(--muted);font-size:
 @media(max-width:900px){.three-d-wrap{grid-template-columns:1fr}.three-d-stage{height:410px}}
 @media(max-width:560px){.three-d-stage{height:360px}.cube-scene,.cube,.face{width:145px;height:145px}.face{font-size:19px}.face.front{transform:translateZ(72.5px)}.face.back{transform:rotateY(180deg) translateZ(72.5px)}.face.right{transform:rotateY(90deg) translateZ(72.5px)}.face.left{transform:rotateY(-90deg) translateZ(72.5px)}.face.top{transform:rotateX(90deg) translateZ(72.5px)}.face.bottom{transform:rotateX(-90deg) translateZ(72.5px)}.orbit{width:245px;height:245px}.orbit.two{width:195px;height:195px}.float-badge{padding:8px 10px;font-size:11px}.b1{left:0}.b2{right:0}.b3{left:8px}.b4{right:5px}}
 
+
+/* Boosting Booking Section */
+.boost-section{position:relative;overflow:hidden}
+.boost-section:before,.boost-section:after{content:"";position:absolute;border-radius:50%;filter:blur(80px);opacity:.18;pointer-events:none}
+.boost-section:before{width:360px;height:360px;background:#1877f2;left:-180px;top:80px}
+.boost-section:after{width:320px;height:320px;background:#e11d48;right:-150px;bottom:40px}
+.boost-head{text-align:center;max-width:850px;margin:0 auto 35px}
+.boost-form-wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:26px;align-items:stretch}
+.boost-form{position:relative;z-index:2;background:linear-gradient(145deg,rgba(12,21,37,.94),rgba(6,12,23,.94));border:1px solid #29415f;border-radius:24px;padding:30px;box-shadow:0 25px 90px rgba(0,0,0,.3)}
+.boost-form .form-title{font-size:24px;margin-bottom:20px}
+.boost-field{display:flex;flex-direction:column;gap:7px;margin-bottom:17px}
+.boost-field label{font-size:13px;color:#d6e2f2;font-weight:800}
+.boost-field input,.boost-field select{width:100%;background:#08111f;color:#fff;border:1px solid #2a405d;border-radius:11px;padding:13px 14px;outline:none}
+.boost-field input:focus,.boost-field select:focus{border-color:#4f9bff;box-shadow:0 0 0 3px rgba(20,120,232,.1)}
+.boost-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.platform-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:9px}
+.platform-option{position:relative}
+.platform-option input{position:absolute;opacity:0;pointer-events:none}
+.platform-option label{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;min-height:82px;padding:10px 6px;border:1px solid #2a405d;background:#0a1527;border-radius:12px;text-align:center;cursor:pointer;transition:.2s;font-size:12px}
+.platform-option label span{font-size:24px}
+.platform-option input:checked+label{border-color:#2f8cff;background:linear-gradient(145deg,#102a4d,#10192a);box-shadow:0 0 0 2px rgba(47,140,255,.15)}
+.days-control{display:grid;grid-template-columns:46px 1fr 46px;border:1px solid #2a405d;border-radius:11px;overflow:hidden;background:#08111f}
+.days-control button{border:0;background:#111d30;color:#fff;font-size:23px;cursor:pointer}
+.days-control button:hover{background:#193254}
+.days-control input{text-align:center;border:0!important;border-radius:0!important;font-weight:900;font-size:17px}
+.boost-note{font-size:11px;color:#8fa0b8;margin-top:-6px}
+.boost-submit{width:100%;padding:15px;border:0;border-radius:12px;background:linear-gradient(100deg,#20c76a,#159447);color:#06110a;font-weight:950;font-size:16px;cursor:pointer;margin-top:4px}
+.boost-submit:hover{filter:brightness(1.08);transform:translateY(-1px)}
+.boost-visual{position:relative;min-height:100%;border:1px solid #263e5d;border-radius:24px;background:radial-gradient(circle at 50% 40%,rgba(30,110,220,.15),transparent 45%),linear-gradient(145deg,#0d1a2d,#060b15);overflow:hidden;display:flex;align-items:center;justify-content:center}
+.boost-visual .visual-title{position:absolute;top:28px;left:30px;right:30px;text-align:center;color:#bcd0e8;font-size:13px;letter-spacing:.08em;text-transform:uppercase;font-weight:900}
+.ad-orbit{position:absolute;width:360px;height:360px;border:1px solid rgba(85,156,255,.22);border-radius:50%;transform:rotateX(65deg) rotateZ(12deg);animation:orbitSpin 12s linear infinite}
+.ad-orbit.o2{width:290px;height:290px;transform:rotateY(70deg) rotateZ(-18deg);animation-duration:9s}
+.ad-orbit.o3{width:420px;height:420px;transform:rotateX(70deg) rotateY(20deg);animation-duration:16s}
+.ad-core{width:150px;height:150px;position:relative;transform-style:preserve-3d;animation:adFloat 4s ease-in-out infinite,adSpin 10s linear infinite;z-index:2}
+.ad-core .face{position:absolute;width:150px;height:150px;display:grid;place-items:center;text-align:center;border:1px solid rgba(255,255,255,.18);border-radius:22px;background:linear-gradient(145deg,rgba(27,94,170,.9),rgba(155,27,60,.82));box-shadow:0 25px 65px rgba(0,0,0,.4),inset 0 0 30px rgba(255,255,255,.08);font-weight:950;letter-spacing:.08em}
+.ad-core .front{transform:translateZ(75px)}
+.ad-core .back{transform:rotateY(180deg) translateZ(75px)}
+.ad-core .right{transform:rotateY(90deg) translateZ(75px)}
+.ad-core .left{transform:rotateY(-90deg) translateZ(75px)}
+.ad-core .top{transform:rotateX(90deg) translateZ(75px)}
+.ad-core .bottom{transform:rotateX(-90deg) translateZ(75px)}
+.float-ad{position:absolute;z-index:3;padding:9px 12px;border:1px solid #2d527c;background:rgba(8,17,31,.88);border-radius:12px;box-shadow:0 15px 40px rgba(0,0,0,.25);font-size:12px;font-weight:900;animation:badgeFloat 4s ease-in-out infinite}
+.float-ad small{display:block;color:#91a7c2;font-weight:600;margin-top:3px}
+.float-ad.a1{top:26%;left:9%}.float-ad.a2{top:20%;right:9%;animation-delay:.7s}.float-ad.a3{bottom:23%;left:11%;animation-delay:1.2s}.float-ad.a4{bottom:17%;right:10%;animation-delay:1.8s}
+.boost-benefits{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:18px}
+.boost-benefit{padding:16px;border:1px solid #243b58;border-radius:15px;background:rgba(9,17,30,.7);text-align:center}
+.boost-benefit b{display:block;margin-bottom:5px}.boost-benefit span{font-size:12px;color:#91a2b8}
+@keyframes adSpin{from{transform:translateY(0) rotateX(-8deg) rotateY(0deg)}to{transform:translateY(0) rotateX(-8deg) rotateY(360deg)}}
+@keyframes adFloat{0%,100%{margin-top:0}50%{margin-top:-16px}}
+@keyframes orbitSpin{from{transform:rotateX(65deg) rotateZ(0deg)}to{transform:rotateX(65deg) rotateZ(360deg)}}
+@keyframes badgeFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+@media(max-width:900px){.boost-form-wrap{grid-template-columns:1fr}.boost-visual{min-height:520px}.boost-benefits{grid-template-columns:1fr 1fr}.platform-grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:600px){.boost-grid{grid-template-columns:1fr}.platform-grid{grid-template-columns:1fr 1fr}.boost-benefits{grid-template-columns:1fr}.boost-visual{min-height:460px}.ad-orbit{width:280px;height:280px}.ad-orbit.o2{width:220px;height:220px}.ad-orbit.o3{width:330px;height:330px}.ad-core,.ad-core .face{width:120px;height:120px}.ad-core .front{transform:translateZ(60px)}.ad-core .back{transform:rotateY(180deg) translateZ(60px)}.ad-core .right{transform:rotateY(90deg) translateZ(60px)}.ad-core .left{transform:rotateY(-90deg) translateZ(60px)}.ad-core .top{transform:rotateX(90deg) translateZ(60px)}.ad-core .bottom{transform:rotateX(-90deg) translateZ(60px)}.float-ad{font-size:10px;padding:7px 9px}}
+
 </style>
 </head>
 <body>
@@ -88,7 +142,7 @@ footer{padding:30px 0;border-top:1px solid #1d2a3d;color:var(--muted);font-size:
 <a class="brand" href="#home"><img src="ad-logo.png" alt="THE AD DIGITAL Logo"><span>THE</span> <b>AD DIGITAL</b></a>
 <button class="menu" aria-label="Open menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
 <div class="nav-links">
-<a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#three-d">3D Motion</a><a href="#packages">Packages</a><a href="#booking">Book</a><a href="#portfolio">Portfolio</a><a href="#team">Team</a><a href="#contact">Contact</a><a class="nav-cta" href="#booking">Book Your Package</a>
+<a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#three-d">3D Motion</a><a href="#boosting">Boosting</a><a href="#packages">Packages</a><a href="#booking">Book</a><a href="#portfolio">Portfolio</a><a href="#team">Team</a><a href="#contact">Contact</a><a class="nav-cta" href="#booking">Book Your Package</a>
 </div>
 </div>
 </nav>
@@ -176,6 +230,52 @@ footer{padding:30px 0;border-top:1px solid #1d2a3d;color:var(--muted);font-size:
 <div class="face front">AD<br>DIGITAL</div><div class="face back">ADS</div><div class="face right">3D</div><div class="face left">REELS</div><div class="face top">BRAND</div><div class="face bottom">GROW</div>
 </div></div>
 </div>
+</div>
+</div>
+</section>
+
+
+<section id="boosting" class="boost-section">
+<div class="container">
+<div class="boost-head section-head">
+<span class="eyebrow">Boosting • Book To Run Ad</span>
+<h2>Boosting (Book To Run Ad)</h2>
+<p>Fill in your campaign details and send your boosting request directly to THE AD DIGITAL on WhatsApp.</p>
+</div>
+<div class="boost-form-wrap">
+<form class="boost-form" id="boostingForm">
+<div class="form-title">🚀 Book Your Advertisement</div>
+<div class="boost-field"><label>Business Name *</label><input id="boostBusiness" required placeholder="Enter your business name"></div>
+<div class="boost-field"><label>Platform *</label>
+<div class="platform-grid">
+<div class="platform-option"><input type="radio" id="pTikTok" name="boostPlatform" value="TikTok" required><label for="pTikTok"><span>🎵</span>TikTok</label></div>
+<div class="platform-option"><input type="radio" id="pInstagram" name="boostPlatform" value="Instagram"><label for="pInstagram"><span>📸</span>Instagram</label></div>
+<div class="platform-option"><input type="radio" id="pFacebook" name="boostPlatform" value="Facebook"><label for="pFacebook"><span>f</span>Facebook</label></div>
+<div class="platform-option"><input type="radio" id="pYouTube" name="boostPlatform" value="YouTube"><label for="pYouTube"><span>▶</span>YouTube</label></div>
+<div class="platform-option"><input type="radio" id="pGoogle" name="boostPlatform" value="Google"><label for="pGoogle"><span>G</span>Google</label></div>
+</div></div>
+<div class="boost-grid">
+<div class="boost-field"><label>How many days will you run your ad? *</label><div class="days-control"><button type="button" id="daysMinus" aria-label="Decrease days">−</button><input id="boostAdDays" type="number" min="1" value="7" required><button type="button" id="daysPlus" aria-label="Increase days">+</button></div><div class="boost-note">Choose the number of days for your campaign.</div></div>
+<div class="boost-field"><label>Budget (Optional)</label><input id="boostBudget" type="number" min="0" step="1" placeholder="e.g. 1000"><div class="boost-note">You can leave this blank if your budget is not decided yet.</div></div>
+</div>
+<button class="boost-submit" type="submit">📲 Book Now & Send to WhatsApp</button>
+<p class="boost-note" style="text-align:center;margin-top:10px">Your booking details will be sent to <b style="color:#35d47a">9827146421</b> on WhatsApp.</p>
+</form>
+<div class="boost-visual">
+<div class="visual-title">3D DIGITAL AD CAMPAIGN</div>
+<div class="ad-orbit"></div><div class="ad-orbit o2"></div><div class="ad-orbit o3"></div>
+<div class="float-ad a1">📱 SOCIAL ADS<small>Reach your audience</small></div>
+<div class="float-ad a2">🎯 TARGETING<small>Right people, right time</small></div>
+<div class="float-ad a3">📈 GROWTH<small>Campaign focused</small></div>
+<div class="float-ad a4">⚡ BOOST<small>More visibility</small></div>
+<div class="ad-core"><div class="face front">AD<br>DIGITAL</div><div class="face back">BOOST</div><div class="face right">ADS</div><div class="face left">REACH</div><div class="face top">GROW</div><div class="face bottom">2026</div></div>
+</div>
+</div>
+<div class="boost-benefits">
+<div class="boost-benefit">🎯 <b>Targeted Reach</b><span>Reach the right audience</span></div>
+<div class="boost-benefit">📊 <b>Campaign Focus</b><span>Clear ad duration & budget</span></div>
+<div class="boost-benefit">⚡ <b>Quick Booking</b><span>Send details instantly</span></div>
+<div class="boost-benefit">💬 <b>WhatsApp Support</b><span>Direct communication</span></div>
 </div>
 </div>
 </section>
@@ -385,6 +485,33 @@ form.addEventListener('submit',function(e){
  window.open(url,'_blank');
  setTimeout(()=>document.getElementById('toast').classList.remove('show'),3500);
 });
+
+const boostForm=document.getElementById('boostingForm');
+const boostDays=document.getElementById('boostAdDays');
+document.getElementById('daysMinus').addEventListener('click',()=>{boostDays.value=Math.max(1,(parseInt(boostDays.value)||1)-1)});
+document.getElementById('daysPlus').addEventListener('click',()=>{boostDays.value=(parseInt(boostDays.value)||1)+1});
+boostForm.addEventListener('submit',function(e){
+ e.preventDefault();
+ const business=document.getElementById('boostBusiness').value.trim();
+ const platform=document.querySelector('input[name="boostPlatform"]:checked')?.value||'Not selected';
+ const days=document.getElementById('boostAdDays').value||'Not provided';
+ const budget=document.getElementById('boostBudget').value.trim()||'Not provided';
+ const msg=['🚀 *THE AD DIGITAL — BOOSTING BOOKING*','',
+ '*CAMPAIGN DETAILS*',
+ 'Business Name: '+business,
+ 'Platform: '+platform,
+ 'Ad Duration: '+days+' day(s)',
+ 'Budget: '+budget+(budget==='Not provided'?'':' NPR'),'',
+ '*Request:* Please contact me regarding my advertisement boosting booking.',
+ '', '*Submitted via THE AD DIGITAL Website*'].join('\\n');
+ const url='https://wa.me/9779827146421?text='+encodeURIComponent(msg);
+ const toast=document.getElementById('toast');
+ toast.textContent='Opening WhatsApp with your boosting booking…';
+ toast.classList.add('show');
+ window.open(url,'_blank');
+ setTimeout(()=>toast.classList.remove('show'),3500);
+});
+
 document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',()=>document.querySelector('.nav-links').classList.remove('open')));
 </script>
 </body>
